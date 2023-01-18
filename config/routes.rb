@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'users/show'
   delete 'logout' => 'sessions#destroy'
-  resources :users
   root 'static_pages#home' 
   devise_for :users
   resources :books

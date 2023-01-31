@@ -20,12 +20,18 @@
     <%= form.label :number_of_pages %>
     <%= form.number_field :number_of_pages %>
   </div>
-  
-    <div class="field">
+      
+   <div class="field">
+    <%= form.label :detail %>
+    <%= form.text_field :detail %>
+   </div>
+   
+   <div class="field">
     <%= form.label :image %>
     <%= form.file_field :image %>
-  </div>
+   </div>
   
+
 
   <div class="actions">
     <%= form.submit %>

@@ -21,6 +21,8 @@ class BookReviewsController < ApplicationController
 
   # POST /book_reviews or /book_reviews.json
   def create
+     url="/books/" +@book_review.book_id.to_s
+     format.html {redirect_to url, notice:"Book review was successfully created."
     @book_review = BookReview.new(book_review_params)
 
     respond_to do |format|

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :book_reviews
   get 'users/show'
   delete 'logout' => 'sessions#destroy'
   root 'static_pages#home' 

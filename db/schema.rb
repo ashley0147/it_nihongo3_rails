@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 2023_01_31_090216) do
     t.integer "number_of_pages"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "detail"
   end
 
   create_table "users", force: :cascade do |t|
